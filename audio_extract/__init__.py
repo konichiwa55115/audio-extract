@@ -22,7 +22,7 @@ def extract_sub_audio(input_path: str, output_path: str, start_time: str, durati
     return True
 
 
-def run(input_path: str, output_path: str = "./audio.mp3", start_time: str = "00:00", duration: "str | None = None"):
+def run(input_path: str, output_path: str = "./audio.mp3", start_time: str = "00:00", duration: "str | None" = None):
     input_path = os.path.abspath(input_path)
     output_path = os.path.abspath(output_path)
 
