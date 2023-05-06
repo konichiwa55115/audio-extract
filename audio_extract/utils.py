@@ -19,7 +19,7 @@ def media_duration(path: str):
     return duration
 
 
-def seconds_to_hms(seconds: float | int) -> str:
+def seconds_to_hms(seconds: "float | int") -> str:
     hours = int(seconds // 3600)
     minutes = int((seconds % 3600) // 60)
     seconds = int(seconds % 60)
@@ -27,7 +27,7 @@ def seconds_to_hms(seconds: float | int) -> str:
     return hms
 
 
-def hms_to_seconds(time_str) -> float | None:
+def hms_to_seconds(time_str) -> "float | None":
     # Split the time string into hours, minutes, and seconds
     time_parts = time_str.split(':')
     if len(time_parts) == 3:  # HH:MM:SS format
